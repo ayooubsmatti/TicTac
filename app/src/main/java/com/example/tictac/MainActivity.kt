@@ -164,7 +164,7 @@ class MainActivity : AppCompatActivity() {
     fun autoPlay(){
 
 
-        var emptyCells = ArrayList<Int>()
+        val emptyCells = ArrayList<Int>()
 
         for( cellId in 1..9){
 
@@ -184,7 +184,7 @@ class MainActivity : AppCompatActivity() {
         val randIndex = nextInt(emptyCells.size)
         val cellId = emptyCells[randIndex]
 
-        var buSelected:Button?
+        val buSelected:Button?
         buSelected =  when(cellId){
             1-> button1
             2-> button2
